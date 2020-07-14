@@ -26,3 +26,5 @@ for (let d=1; d<=99; d+=2){
 myArray.push(d);
 }
 console.log(myArray);
+
+
