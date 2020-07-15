@@ -1,30 +1,22 @@
-//0-99 ascending
-for (let i=0; i<=99; i++) {
+//0-99 ascending (Confirmed)
+for (let i=0; i<=99; i++) 
+{console.log(i);}
 
-    console.log(i);
-}
+//99-0 descending (Confirmed)
+for (let a=99; a>-1; a--)
+{console.log(a)};
 
-//99-0 descending
-for (let a=99; a<=-1; a--)
-{console.log(a)}
-
-//Even numbers 0-98 ascending
+//Even numbers 0-98 ascending (Confirmed)
 for (let b = 0; b<=98; b+=2)
 {console.log(b);}
 
-//Even numbers 98-0 descending
-let ourArray=[];
-for (let c = 98; c<50; c-=2){
-ourArray.push(c); 
-}
+//Even numbers 98-0 descending (Confirmed)
+for (let c = 98; c > -1; c-=2)
+{console.log(c)};
 
-console.log(ourArray);
+//numbers from 49-72 ascending
+for (let d=49; d<=72; d++)
+{console.log(d)};
 
-//ODD numbers from 0-99 (ascending)
-let myArray =[];
-for (let d=1; d<=99; d+=2){
-myArray.push(d);
-}
-console.log(myArray);
 
 
