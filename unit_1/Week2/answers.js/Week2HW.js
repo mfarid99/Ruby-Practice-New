@@ -51,3 +51,49 @@ console.log(dart)
 
 wolfy.splice(0, 1, 'Gameboy')
 console.log(wolfy)
+
+///////////////////////////////
+//Yell At The Ninja Turtles
+///////////////////////////////
+
+//NEED HELP******
+// ninjaTurtle = ["donatello", "leonardo", "raphael" , "michaelangelo"]
+// for (d = 0; d<ninjaTurtle.length; d++) {
+//     first_letter=ninjaTurtle[d][0]
+//     if 
+
+
+///////////////////////////////////
+// METHODS REVISITED
+////////////////////////////////// 
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+//console log Titanic
+console.log(favMovies[8])
+//.sort
+favMovies.sort();
+console.log(favMovies)
+//.pop
+favMovies.pop();
+console.log(favMovies)
+//.push Guardians
+favMovies.push('Guardians Of The Galaxy')
+console.log(favMovies)
+//.reverse
+favMovies.reverse()
+console.log(favMovies)
+//.shift
+favMovies.shift()
+console.log(favMovies)
+//.unshift
+favMovies.unshift()
+console.log(favMovies)
+//.splice
+console.log(favMovies.indexOf('Django Unchained'))
+favMovies.splice(14,14, 'Avatar')
+console.log(favMovies)
+//.slice last half of array
+console.log(favMovies.length)
+favMovies.slice(8,15)
+console.log(favMovies)
+
