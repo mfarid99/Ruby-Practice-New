@@ -119,6 +119,35 @@ console.log(whereIsWaldo)
  //access + console log Waldo
 console.log(whereIsWaldo [2] [1] [1])
 
+//////////////////////////////////////
+// Excited Kitten
+/////////////////////////////////////
+
+//Array of Talking Points
+// const catSays= ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...']
+
+// for (let m= 0; m < catSays.length; m++); {
+//     console.log(catSays);
+    
+//     }
+
+const catTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..." ];
+
+
+for (let meow = 0; meow < 20; meow++){
+  
+ console.log("Love me, pet me! HSSSSSSSS");
+if (meow % 2 === 0) {
+    let talkingPoints = Math.round(Math.random() * (catTalk.length));
+    console.log(catTalk[talkingPoints])
+}
+}
+ 
+//  if ( i % 2 === 0 ){
+//    let talkingPoints = Math.floor(Math.random()* (catTalk.length));
+//    console.log(catTalk[talkingPoints]);
+//  }
+// }
 
 
 
