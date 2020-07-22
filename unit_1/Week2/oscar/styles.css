@@ -1,0 +1,111 @@
+
+.main {
+    
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    height: 415px;
+    background-color: rgb(25, 0, 255);
+    
+    
+}
+
+img.health {
+    position: relative; left: 20px;
+}
+
+
+
+
+    img.left.image {
+        height: 333px;
+        width: 332px;
+        position: relative; bottom: -3px
+    }
+img.real.left {
+        height: 333px;
+        width: 332px;
+    position: relative; bottom: 20px
+}
+
+img.cast {
+    height: 333px;
+    width: 332px;
+    position: relative; bottom: -4px
+    
+}
+
+.second, .third, .fourth {
+    
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    width: 30%;
+    text-align: center;}
+
+.intro {
+        text-align: right;
+        word-spacing: 4em;
+    }
+
+    .btn {
+        color: red;
+        font-size: 20px;
+    }
+
+    h3 {
+        object-position: top 30px;
+    }
+
+    h2.ready {text-align: center;
+            padding: 30px; 
+            color: grey
+
+    }
+
+    h1.Find {
+        text-align: center;
+        font-size: .5in;
+        margin: -45px;
+    }
+    
+    p.lowerbuttons {
+    margin-top: 90px;
+    margin-left: 585px;
+    
+
+    }
+
+    .products, .Features, .Company, .Resources, .Legal {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    width: 19%;
+    text-align: left;
+    margin: 0px;
+    padding: 15 px;
+    border: 5px;
+    
+
+    }
+
+    .Features {
+        position: relative; bottom: 20px
+    }
+
+    .Company {
+        position: relative; bottom: 37px
+    }
+
+    .Resources {
+        position: relative; bottom: -140px
+    }
+
+    .Legal {
+        position: relative; bottom: -135px
+    }
+
+    img.health {
+        position: relative; bottom: 327px; left: 500px;
+    }
