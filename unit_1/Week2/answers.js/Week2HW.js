@@ -65,18 +65,16 @@
 // // //Yell At The Ninja Turtles
 // // ///////////////////////////////
 
-// // ////////////////////////
-// //Yell at the Ninja Turtles
 // //Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 
 // // Use a for of loop (not a typo - try it out! Try a for of loop) to call toUpperCase() on each of them and print out the result.
 
-ninjaTurtle = ["Donatello", "Leonardo", "Raphael" , "Michaelangelo"]
+// ninjaTurtle = ["Donatello", "Leonardo", "Raphael" , "Michaelangelo"]
 
-for (let q=0; q<ninjaTurtle.length; q++) {
-eachNinja = ninjaTurtle[q];
-console.log(eachNinja.toUpperCase())
-}
+// for (let q=0; q<ninjaTurtle.length; q++) {
+// eachNinja = ninjaTurtle[q];
+// console.log(eachNinja.toUpperCase())
+// }
 
 
 

@@ -1,6 +1,8 @@
 //Verbal Questions
+
 //1-What is the difference between a parameter and an argument?
 //The argument is the input, the parameter is how the input is represented in the function.
+
 //2-Within a function, what is the difference between return and console.log?
 //the difference is that the output value of a function can not come from a console.log. A function is only defined if it has a return value. 
 
@@ -64,11 +66,14 @@ const totalNum = (arr) => {
 //Write another function called printPrimes that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with printPrimes(97), it will print all the Prime numbers up to and including 97.
 //This function can call on the previous checkPrime function.
 
-//const printPrimes = (checkPrime <= input) 
-//console.log(printPrimes(99))
+const printPrimes = (checkPrime) => {
+    return checkPrime
+} 
+console.log(printPrimes(99))
 
-//Rock Paper Scissors
-//Need Help
+///////////////////Rock Paper Scissors
+//////////////////////////////////////
+//Need Help with this question
 
 
   
