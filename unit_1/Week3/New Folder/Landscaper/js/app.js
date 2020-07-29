@@ -1,120 +1,70 @@
-// // tools = ['teeth', 'rusty scissors']
-// // currentTool = tools[1]
-// // let purse = 0
-// // if (currentTool === 'teeth') {
-// //     purse +=1
-// // }
-// // purse += 1
-// // console.log(purse)
-// // purse +=5
-// // console.log(purse)
-// // purse +=3
-// // console.log(purse)
+//LAWNMOWER PROJECT
+
+    //Declare variables
+    let purse;
+    let teeth;
 
 
-// // const yourAnswer = prompt('which tool you want to use?', 'teeth/scissors/saw');
+    //Set initial state
+    const start = () => {
+        teeth = 1;
+        purse = 0;
+        askForAction();
+        
+    }
 
-// // if(yourAnswer == 'teeth'){
-// //   console.log('it is gonna take all day!');
-// // } else if (yourAnswer == 'scissors'){
-// //   console.log('cheapass!!');
-// // }
-// // else if (yourAnswer == 'saw')
-// // {console.log('you are scaring me');
-// // }
-// // else {console.log('does not compute')}
+    const showStatus = () => {
+        alert('You have ' + '$' + purse);
+    }
 
-// // const greet = () => {
-// //     alert('hi');
-// // }
+    const askForAction = () => {
+        showStatus();
+        const choice = prompt ("What do you want to do?", "Cut grass/buy tool/restart");
+        if (choice === 'Cut grass') {
+            earnMoney();
+        } else if (choice ==='buy tool') {
+            buyTool(); 
+        } else if (choice === 'restart') {
+            start()
+        }
 
-// // const byeBye = () => {
-// //     alert('bye')
-// // }
+    }
 
-// // const other = () => {
-// //     alert('imshe')
-// // }
-
-// // const answer = prompt ('are you coming or going?', 'coming or going');
-
-// // if (answer === 'coming') {
-// //     greet()
-
-// // } else if (answer ==='going') {
-// //     byeBye();
-
-// // } else {
-// //     other()
-// // }
-
-
-// // const greet = ()=>{
-// //     alert('Hi!');
-// // }
-// // const sayBye = ()=>{
-// //     alert('Bye!');
-// // }
-// // const answer = prompt('Are you arriving or leaving', 'Arriving or Leaving?');
-
-// // if(answer === "Arriving"){
-// //     greet();
-// // } else if(answer === "Leaving") {
-// //     sayBye();
-// // }
-
-// const dontDoIt= () => {
-// alert ('you gonna die') 
-// }
-
-// const itIsOk = () => {
-//     alert ('Oh Well')
-// }
-
-// const notSure = () => {
-//     alert ('May be May be not')
-// }
-
-// const safeSafe = () => {
-//     alert ('it is safe')
-// }
-
-// const other = () => {
-//     alert ('get off the road')
-// }
-
-// const response = prompt ('which way do you plan to go?', 'straight, back, right, west')
-
-// if (response === 'straight') {
-//     itIsOk ();
-// }
-
-// if (response === 'back') {
-//     dontDoIt();
-// }
-
-// if (response === 'right') {
-//     notSure();
-// }
-
-// if (response === 'west') {
-//     safeSafe();
-// }
-
-//  else other()
-
-
-    let purse = 0
+    const earnMoney = () => {
+        const toolChoice = prompt ("what tool to use", "teeth/scissors/lawnmower/power lawnmower/starving students")
+        if (toolChoice === "teeth") {
+            askForAction(purse+=1) }
+         else if (toolChoice === "scissors") {
+        askForAction(purse+=5);
+         } else if (toolChoice === "lawnmower") {
+         askForAction(purse+=50); 
+         } else if (toolChoice === "power lawnmower") {
+            askForAction(purse+=100); 
+         }else if(toolChoice === "starving students") {
+             askForAction(purse+=250)
+         }
+        
+    }
     
-    if (currentTool === 'teeth') {
-        purse +=1 } 
 
-    if (purse === 5) {
-        currentTool === 'scissors'
+    const buyTool = () => {
+        const bestBuy = prompt ("what tool to buy", "scissors/lawnmower/power lawnmower, starving students")
+        if (bestBuy === "scissors" && purse >4) {
+            askForAction(purse -=5) 
+        }
+        else if (bestBuy ==='lawnmower' && purse > 24) {
+            askForAction(purse -=25)
+        }
+        else if(bestBuy === 'power lawnmower' && purse > 249) {
+            askForAction(purse-=250)
+        }
+        else if(bestBuy === 'starving students' && purse > 499) {
+            askForAction(purse-=500)
+        }
     }
-
-    if (purse ===25) {
-        currentTool === 'lawnmower'
-    }
-
-
+    
+    
+start();
+    
+    
+    
