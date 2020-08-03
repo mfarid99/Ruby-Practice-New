@@ -52,14 +52,14 @@ dirtyHamster.getPrice()
 //////////// 
 
 class Person {
-    constructor (name, age, height, weight, mood, hamsters, bankAccount) {
+    constructor (name, age=0, height=0, weight=0, mood=0, hamsters=[], bankAccount=0) {
         this.name = name;
-        this.age = 0;
-        this.height = 0;
-        this.weight= 0;
-        this.mood=0;
-        this.hamsters=[];
-        this.bankAccount=0;
+        this.age = age;
+        this.height = height;
+        this.weight= weight;
+        this.mood=mood;
+        this.hamsters=hamsters;
+        this.bankAccount=bankAccount;
 
     }
     getName() {
@@ -89,12 +89,72 @@ class Person {
         this.bankAccount+=10
     }
     buyHamster() {
-         this.hamsters.push(this.hamsters);
+         this.hamsters.push(hamsters);
          this.mood++;
          this.bankAccount-= getPrice()
     }
 }
-    
+
+//Create A Story with your Person Class
+//1-Instantiate a new Person named Timmy
+//2-Age Timmy five years
+const newMan = new Person ('Timmy', 5)
+console.log(newMan)
+//Person {
+   // name: 'Timmy',
+   //age: 5,
+   // height: 0,
+    //weight: 0,
+    //mood: 0,
+    //hamsters: [],
+    //bankAccount: 0
+  //}
+  //3-Have him eat five times.
+  newMan.ageUp(5) 
+    console.log(newMan)
+    //Person {
+//   name: 'Timmy',
+//   age: 5,
+//   height: 0,
+//   weight: 1,
+//   mood: 1,
+//   hamsters: [],
+//   bankAccount: 0
+// }
+//4-Have him exercise 5 times
+newMan.exercise(5)
+console.log(newMan)
+// //Person {
+//     name: 'Timmy',
+//     age: 5,
+//     height: 0,
+//     weight: 0,
+//     mood: 1,
+//     hamsters: [],
+//     bankAccount: 0
+//   }
+//5-Age him 9 years
+    newMan.ageUp(9)
+    console.log(newMan)
+    //Getting wrong age *****
+//6-Create hamster named Gus
+//7-Set Gus' owner to Timmy
+    const anotherHamster = new Hamster ('Timmy','Gus')
+    console.log(anotherHamster)
+//8-Have Timmy buy Gus
+    // buyHamster('Gus')*******wrong need help
+    // console.log(anotherHamster)
+//Getting error msg
+//9-Age Timmy 15 years
+    newMan.ageUp(15)
+    console.log(newMan)
+    //console.log wrong age ***** 
+//10-Have Timmy eat twice
+newMan.eat(2)
+console.log(newMan)
+//11- Timmy exercise twice
+newMan.exercise(2)
+console.log(newMan)
 
 
 
