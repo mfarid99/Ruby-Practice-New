@@ -48,4 +48,32 @@
   
 //   console.log(f(88))
 
+//Answer with comments:
+
+/*
+//In keeping with one of our programming principals (write code for the maintainer): What would have been a more semantic name for this function (hint: this is a problem we had for either lab or hw and is considered a classic ) - are there any other variable names or things that would make this code easier to read and understand?
+
+A more suitable name for the function would be: Result, Outcome, Goal. 
+f2 does not tell us anything about the outcome or result we are trying to calculate.
+
+//If you started a new job and your project was to expand the functionality of this function by allowing a second argument and then based on that second argument, returning the sum of even or odd numbers, which code would you rather start working with f or f2?
+
+I would start with code f so that the first function you pass would be f1 and then the second f2 and so on. 
+
+
+//Finally, the 'shorter' code style doesn't use semi-colons, except for the fourth line. Remove this semi-colon! Run the code, is this semi-colon necessary? */
+
+// const f = l => {
+//   let es = 0, p = 0, c = 1, n = 0
+//   while (c <= l) {
+//     n = c + p
+//     [c, p] = [n, c]
+//     es += (c % 2 === 0) ? c : 0
+//   }
+//   return es
+// }
+
+// console.log(f(55))
+
+//If you run the code without the ; after n = c+p you get an error message as the keys inside an object must be separated by ;
 
