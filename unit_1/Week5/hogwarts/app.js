@@ -1,51 +1,4 @@
-// // // document.querySelector('h1').innerText = 'Welcome to the Upside Down';
 
-// // // const image = document.querySelector('img')
-// // // console.log(image)
-// // // image.style.display = 'none'
-// // // image.style.display = 'block'
-// // // image.style.filter = 'grayscale(60%)'
-// // // image.style.width = '150%'
-// // // image.style.filter = ''
-// // // image.style.width = ''
-
-// // // const eggos = document.createElement('img')
-// // // document.querySelector('.container').appendChild(eggos)
-// // // eggos.setAttribute('src', 'https://i.ytimg.com/vi/TgSmPqMGk2g/maxresdefault.jpg')
-// // // eggos.style.width = '80%'
-
-// // // eggos.remove()
-
-// // // const liCollection = document.querySelectorAll('li')
-// // // console.log(liCollection)
-// // // document.querySelectorAll('li')[2].innerText = 'Demo Dog Hangout'
-
-// // // document.querySelectorAll('li')[3].remove()
-
-// // // $('.container')
-// // // console.log( $ )
-
-// // const $div = $('<div>');
-// // console.log($div)
-
-// // $('body')
-// // console.log($('body'))
-
-// // $('body').append( $div );
-// // $div.addClass('meat');
-
-// // $('div')
-// // console.log($('div'))
-
-// // const $divs = $('div');
-// // console.log($divs)
-// // // $divs.hide()
-
-// // // -$divs.hide( 'slow' );
-
-// if (typeof jQuery == 'undefined'){
-//     console.log('oops! I still have to link my jQuery properly!');
-//   } else {console.log('I did it! I linked jQuery and this js file!')};
 
 $(() => {
 
@@ -95,7 +48,47 @@ $(() => {
     
     const new$h4 = $('<h4>');
     new$h4.text('Holy Wand');
-    $container.append(new$h4)
+    $container.append (new$h4)
+        
+        
+    //YEAR 3
+
+    //Following what you did in previous years, add the following into an unordered list (with the attribute of storage and a value of trunk):
+
+    const $ul = $('<ul>');
+    $ul.text('Storage Trunk')
+    $container.append($ul)
+
+   
+    //butter beer
+    const $liButter = $('<li>Butter Beer</li>');
+    $ul.append($liButter)
+   
+    //invisibility cloak (add a class of secret)
+    const $cloak = $('<li>Invisibility Cloak</li>');
+    $ul.append($cloak)
+    $cloak.addClass('secret')
+    
+    //magic map (add a class of secret)
+    const $liMagipMap = $('<li>Magic Map</li>');
+    $ul.append($liMagipMap)
+    $liMagipMap.addClass('secret')
+
+    //time turner (add a class of secret)
+    const $timeTurner= $('<li>Time Turner</li>');
+    $ul.append($timeTurner)
+    $timeTurner.addClass('secret')
+   
+    //leash (for your pet, be sure to give this list element the same class as you gave your pet)
+    const $leash= $('<li>Leash</li>');
+    $ul.append($leash)
+    $leash.addClass('toad')
+    
+    //Bertie Bott's Every Flavor [Jelly] Beans.
+    const $jellyBeans= $('<li>Bertie Bott\'s Every Flavor [Jelly] Beans</li>');
+    $ul.append($jellyBeans)
+        
+        
 
 
 

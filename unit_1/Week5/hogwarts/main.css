@@ -10,3 +10,13 @@ body {
 .toad {
     font-family: fantasy;
 }
+
+.secret {
+    font-family: cursive;
+    /*In your main.css file, give the items with a class of secret an attribute of opacity: 0.5; */
+    opacity: .5;
+}
+
+ul {
+    list-style-type: none;
+}
