@@ -1,1 +1,9 @@
-body {background-color: #F8F7FF}
+body {
+    
+    background-color: #F8F7FF;
+    
+    /*  //In your main.css file, add a css rule where all text will align center inside the body */
+    text-align: center;
+    
+
+}
