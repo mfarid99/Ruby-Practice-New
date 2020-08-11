@@ -4,6 +4,9 @@ body {
     
     /*  //In your main.css file, add a css rule where all text will align center inside the body */
     text-align: center;
-    
 
+}
+
+.toad {
+    font-family: fantasy;
 }
