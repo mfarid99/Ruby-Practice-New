@@ -21,9 +21,12 @@ ul {
     list-style-type: none;
 }
 
+/* In your main.css file, add a gray 1px solid border around your table, th elements and td elements */
+
 table, th, td {
     border: solid;
     margin-left: auto;
     margin-right: auto;
+    
 
 }

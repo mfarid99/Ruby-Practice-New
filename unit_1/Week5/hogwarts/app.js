@@ -49,6 +49,7 @@ $(() => {
     const new$h4 = $('<h4>');
     new$h4.text('Holy Wand');
     $container.append (new$h4)
+
         
         
     //YEAR 3
@@ -115,10 +116,16 @@ $(() => {
     const $tr1= $('<tr>')
     $newTable.append($tr1)
 
+    /* Create a tr element and add two td elements inside.
+    in the first td add the day Monday
+    in the second td add the classes you are taking (Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice, etc.) */
+
     const $td1 = $('<td>Monday</td>')
     const $td2 = $('<td>Herbology</td>')
 
     $tr1.append($td1, $td2)
+
+    //Create more tr elements with tds inside so that you have Monday - Friday and classes each of those days
     
     const $tr2= $('<tr>')
     $newTable.append($tr2)
@@ -149,6 +156,35 @@ $(() => {
     $newTable.append($tr8)
 
     
+    //YEAR 5
+
+    //Break your wand! (select the element that contains your wand and remove it)
+    
+    new$h4.addClass('wandclass')
+    $('.wandclass').remove();
+
+    //Class was hard! Drink all your butter beer! (remove just the butter beer from your list)
+
+    $liButter.addClass('butterClass');
+    $('.butterClass').remove();
+    
+    //Get a new wand (add the same element back with new text describing your new wand. Be sure to insert it after your pet in the DOM)
+
+    const $newWand = $('<h4>New Wand</h4>')
+    $('.toad').append($newWand)
+
+    //Make your new wand stand out by adding a color of indigo (or whatever color you like). But do it with magic (jQuery): Don't add this css in your main.css file
+
+    $newWand.css('color', 'red');
+
+    //Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk (list item with the same class as your pet inside unordered list)
+
+    $('.toad').remove()
+
+
+
+    
+
 
     
 
