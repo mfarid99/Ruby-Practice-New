@@ -196,8 +196,27 @@ $(() => {
 
     $('.secret').show(slow)
 
+    //Year 7
+
+    //Update your class schedule to read 'Fall 2018'
+    $h5.text('Fall 2018')
+
+    //Celebrate by buying more butter beer! Append a list item with the text 'Butter beer' as the first list item inside your unordered list with the value of trunk
+    const $newButtleBeer = ('<li>buttle beer</li>')
+    $ul.prepend($newButtleBeer)
 
 
+    //Whoops! You broke your trunk when you stood on it while singing karaoke. Get a new storage container for your stuff; replace the unordered list's property of trunk with a new property of chest
+
+    $ul.attr('chest')
+
+    //Add some CSS to your page. Feel free to experiment and make this page your own
+    // const harryPotterImg = theImg
+    $container.prepend('<img src = "https://media.thatsweetgift.com/wp-content/uploads/bfi_thumb/is-harry-potter-a-true-story-o6saol48zgxiya22c33wrj9vdazs3dwdv1mqrc3zo6.jpg" />')
+
+    $h5.css('color', 'red'), 
+    $h5.css('font-size', '3em');
+    
 
 
 
