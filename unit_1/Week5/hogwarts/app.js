@@ -181,6 +181,24 @@ $(() => {
 
     $('.toad').remove()
 
+    //Year 6
+
+    //Nosey roommate alert! hide (use jQuery method hide) to hide all your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+
+    const slow = 4000
+    $('.secret').hide(slow)
+
+    //Nosey roommate falls asleep 2 seconds later (chain the jQuery method delay on your hide method (give argument of at least 2000) to prevent showing your secret elements too soon.
+
+    $('.secret').delay(2000).hide(200)
+
+    //Use jQuery method show to reveal all of your belongings with a class of secret (give an argument of 'slow' - to see this function in action) 
+
+    $('.secret').show(slow)
+
+
+
+
 
 
     
