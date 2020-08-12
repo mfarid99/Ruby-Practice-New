@@ -56,8 +56,9 @@ $(() => {
     //Following what you did in previous years, add the following into an unordered list (with the attribute of storage and a value of trunk):
 
     const $ul = $('<ul>');
-    $ul.text('Storage Trunk')
-    $container.append($ul)
+    $ul.attr('storage', 'trunk');
+    $container.append($ul);
+    
 
    
     //butter beer
@@ -89,8 +90,65 @@ $(() => {
     $ul.append($jellyBeans)
         
         
+    //YEAR4
 
+    //Make a table
+    //Right above your table add an h5 that says 'Spring 2017'
+    const $h5 = $('<h5>');
+    $h5.text('Spring 2017');
+    $container.append($h5)
 
+    const $newTable = $('<table>');
+    $container.append($newTable)
+
+    //Inside the table add a thead element
+    const $thead = $('<thead>')
+    $newTable.append($thead)
+
+    //Inside the thead element add two th elements
+    const $th1 = $('<th>Day</th>')
+    $thead.append($th1)
+
+    const $th2 = $('<th>Classes</th>')
+    $thead.append($th2)
+    
+    const $tr1= $('<tr>')
+    $newTable.append($tr1)
+
+    const $td1 = $('<td>Monday</td>')
+    const $td2 = $('<td>Herbology</td>')
+
+    $tr1.append($td1, $td2)
+    
+    const $tr2= $('<tr>')
+    $newTable.append($tr2)
+
+    const $td3 = $('<td>Tuesday</td>')
+    const $td4= $('<td>Divination</td>')
+
+    $tr2.append($td3, $td4)
+
+    const $tr3= $('<tr>')
+    $newTable.append($tr3)
+
+    const $td5 = $('<td>Wednesday</td>')
+    const $td6= $('<td>History of Magic</td>')
+
+    $tr3.append($td5, $td6)
+
+    const $tr5 =$('<tr><td>Thursday</td> <td>Charms</td></tr>')
+    $newTable.append($tr5)
+
+    const $tr6 =$('<tr><td>Friday</td> <td>Potions</td></tr>')
+    $newTable.append($tr6)
+
+    const $tr7 =$('<tr><td>Saturday</td> <td>Transfiguration</td></tr>')
+    $newTable.append($tr7)
+
+    const $tr8 =$('<tr><td>Sunday</td> <td>Defense Against the Dark Arts</td></tr>')
+    $newTable.append($tr8)
+
+    
 
     
 
