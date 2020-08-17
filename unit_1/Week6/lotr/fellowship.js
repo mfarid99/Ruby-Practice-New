@@ -141,6 +141,16 @@ const keepItSecretKeepItSafe = () => {
 // ============
 // Chapter 4
 // ============
+
+for (baddiesNames of baddies) {
+
+  $ulBaddies = $('<ul>')
+  $('#Mordor').append($ulBaddies)
+  let $liBaddies= $('<li>').text(baddiesNames).addClass('baddy')
+  $ulBaddies.append($liBaddies)
+ 
+}
+
 const makeBaddies = () => {
 
   // 1. display an unordered list of baddies in Mordor
@@ -157,6 +167,18 @@ const makeBaddies = () => {
 // ============
 // Chapter 5
 // ============
+
+  const $aside = $('<aside>')
+  $('#middle-earth').append($aside)
+
+  for (buddiesNames of buddies) {
+  $ulbuddies = $('<ul>')
+  $aside.append($ulbuddies)
+  
+  let $libuddies = $('<li>').text(buddiesNames).addClass('buddy')
+  $ulbuddies.append($libuddies)
+ 
+}
 const makeBuddies = () => {
 
   // 1. create an aside tag and append it to middle-earth below mordor
