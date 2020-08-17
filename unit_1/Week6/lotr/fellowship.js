@@ -174,7 +174,7 @@ const makeBaddies = () => {
   for (buddiesNames of buddies) {
   $ulbuddies = $('<ul>')
   $aside.append($ulbuddies)
-  
+
   let $libuddies = $('<li>').text(buddiesNames).addClass('buddy')
   $ulbuddies.append($libuddies)
  
@@ -194,9 +194,15 @@ const makeBuddies = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 5 complete - Made the Buddies".
 
+
+
+
 // ============
 // Chapter 6
 // ============
+
+
+$('#Rivendell').children().append($('.hobbit'))
 
 const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
