@@ -118,6 +118,12 @@ const makeHobbits = () => {
 // ============
 // Chapter 3
 // ============
+
+    const $div = $('<div>').attr('id', 'the-ring')
+    
+    $('.hobbit').append($div)
+   
+
 const keepItSecretKeepItSafe = () => {
 
   // 1. create an empty div with an id of 'the-ring'
