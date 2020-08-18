@@ -201,8 +201,9 @@ const makeBuddies = () => {
 // Chapter 6
 // ============
 
-
-$('#Rivendell').children().append($('.hobbit'))
+const $hobitCHildNodes = $('#The-Shire').children().not('h1')
+console.log($hobitCHildNodes)
+$('#Rivendell').append($hobitCHildNodes)
 
 const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
@@ -218,6 +219,8 @@ const leaveTheShire = () => {
 // ============
 // Chapter 7
 // ============
+
+
 const beautifulStranger = () => {
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
