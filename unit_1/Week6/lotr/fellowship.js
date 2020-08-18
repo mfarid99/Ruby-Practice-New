@@ -266,8 +266,17 @@ const forgeTheFellowShip = () => {
 // ============
 // Chapter 9
 // ============
+
+const $gandalfWhite = $('aside').children().eq(0)
+  console.log($gandalfWhite)
+  $gandalfWhite.text('Gandalf the White').addClass('the-white')
+
+
 const theBalrog = () => {
 
+  
+  // $gandalfWhite.text('Gandalf the White')
+      
   // 1. change the 'Gandalf' text to 'Gandalf the White'
 
   // 2. add a class "the-white" to this element
