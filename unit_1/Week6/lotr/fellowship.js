@@ -220,7 +220,10 @@ const leaveTheShire = () => {
 // Chapter 7
 // ============
 
+const $buddyNames = $('aside').children().eq(3)
 
+console.log($buddyNames)
+$buddyNames.text('Aragon')
 const beautifulStranger = () => {
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
