@@ -4,9 +4,14 @@ const port = 3000;
 
 
 
-app.get('/greeting/:name', (req, res) => {
-	console.log(req.params);
-	res.send(`hello ${req.params.name} it's great to see you finally`);
+// app.get('/greeting/:name', (req, res) => {
+// 	console.log(req.params);
+// 	res.send(`hello ${req.params.name} it's great to see you finally`);
+// });
+
+app.get('/tip/:total/:tipPercentage', (req, res) => {
+    
+res.send(`${req.params.tipPercentage/req.params.total * 100}`);
 });
 
 
