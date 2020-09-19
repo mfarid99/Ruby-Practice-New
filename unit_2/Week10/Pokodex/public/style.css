@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgb(238, 243, 164);
+    color: white;
+  }
+  
+  main {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid darkgreen;
+    padding: 20px;
+    background-color: aqua;
+    flex-wrap: nowrap;
+  }
+   
+  #Addpokemonbtn {
+    margin-left: 35em;
+  }
+
+  h2 {
+    font-family: fantasy;
+    font-style: normal;
+  }
+
+
+  
+ 
+  
+  
