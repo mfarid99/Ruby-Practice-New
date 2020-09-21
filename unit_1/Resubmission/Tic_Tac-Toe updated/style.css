@@ -1,0 +1,26 @@
+
+h1 {
+  padding: 50px;
+  font-size: 70px;
+  font-family: cursive;
+  color: red;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 30px auto;
+}
+.square {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: 300;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 5px black solid;
+}
