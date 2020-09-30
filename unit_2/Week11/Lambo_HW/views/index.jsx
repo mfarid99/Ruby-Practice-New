@@ -42,8 +42,7 @@ const mystyle2 = {
       //     };
 
     return (
-      <AppLayout title="Lambo Index Page"
-                  title = "INDEX PAGE LAMBO">
+      <AppLayout title="CLASSIC LAMBOS">
 
         <div>
           

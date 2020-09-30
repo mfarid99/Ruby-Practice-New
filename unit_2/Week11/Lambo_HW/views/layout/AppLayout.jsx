@@ -18,7 +18,7 @@ class AppLayout extends React.Component{
               
         </head>
         <body>
-          <h1 style = {{color: "red"}}>FROM APPLAYOUT</h1>
+          <h1 style = {{color: "red"}}>LUXURY CARS FOR SALE!</h1>
         <h1>{this.props.title}</h1>
        {/* This is where our other components will be injected */}
           {this.props.children}
