@@ -9,6 +9,7 @@ export const App = (props) => {
         <>
         <div>  
         <Div1 />
+        <Div1/>
 
         </div>
         </>

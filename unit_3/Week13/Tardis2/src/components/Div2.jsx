@@ -7,8 +7,6 @@ export const Div2 = (props) => {
     
     return (
         <>
-                <h1>{props.name}</h1>
-        <h1>{props.change}</h1>
         <Div3 />     
         </>
     )
