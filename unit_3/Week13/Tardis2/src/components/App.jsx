@@ -1,15 +1,20 @@
 import React from "react"
 import {Div1} from "./Div1.jsx"
 
-export const App = (props) => {
-  const hello = "hello world App"  
 
+export const App = (props) => {
+
+  const [state, setState] = React.useState({
+    tardis:{  
+       name: "Time and Relative Dimension in Space",
+       caps: false,
+  } })
     
     return (
         <>
         <div>  
-        <Div1 />
-        <Div1/>
+        <Div1 tardis={state} />
+       
 
         </div>
         </>

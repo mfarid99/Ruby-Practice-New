@@ -7,7 +7,12 @@ export const Div2 = (props) => {
     
     return (
         <>
-        <Div3 />     
+        <div>  
+        
+        <Div3 tardis = {props.tardis} / > 
+        <Div3 tardis = {props.tardis} / > 
+        </div>
+            
         </>
     )
 }
