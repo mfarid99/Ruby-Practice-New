@@ -185,3 +185,58 @@ colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
 # p multiply_each_by_five
 # ==> [25, 25, 30, 35, 10, 20, 15, 10, 5, 45, 35, 30, 0, 0]
+
+##Methods with a Hash
+
+# Hashes
+
+# Hashes
+
+book = {
+  title: 'The Great Gatsby',
+  author: 'F Scott Fitzgerald',
+  year: 1925,
+  price: 10
+}
+
+lamp = {
+  type: 'reading',
+  brand: 'Ikea',
+  price: 25
+}
+
+table = {
+  type: 'bed side',
+  brand: 'Crate & Barrel',
+  color: 'birch',
+  price: 50
+}
+
+
+p book [:price]
+
+#1 - Write a method named print_price that will take in any hash and return the price of the item.
+
+
+
+# Euler Problem 1
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+# Find the sum of all the multiples of 3 or 5 below 1000.
+
+total = 0
+
+(1...1000).each do |i|
+
+    if i % 3 == 0 && i % 5 == 0
+        total += i
+    elsif i % 5 == 0
+        total += i
+    elsif i % 3 == 0
+        total += i
+    end      
+end
+
+puts total
+
+  
