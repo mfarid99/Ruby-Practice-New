@@ -22,7 +22,7 @@ p x.upcase
 
 #Nums Array and Enumerables
 
-nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0, 35, 19, 66, 3, 22, 21, 4, 4, 4, 0, 1, 2, 3, 4, 12, 15]
+# nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0, 35, 19, 66, 3, 22, 21, 4, 4, 4, 0, 1, 2, 3, 4, 12, 15]
 
 # 1.Use .uniq to print the array with all duplicate entries removed
 
@@ -142,11 +142,24 @@ nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0, 35, 19, 66, 3, 22, 21, 4, 4, 4
 # p nums.reject {|obj| obj % 3 == 0}
 # ==> [5, 5, 7, 2, 4, 2, 1, 7, 35, 19, 22, 4, 4, 4, 1, 2, 4]
 
-#15 use .select to return all the numbers divisible by 5
+#16 use .select to return all the numbers divisible by 5
 # p nums.select {|obj| obj % 5 == 0}
 # ==> [5, 5, 0, 0, 35, 0, 15]
 
+#Color Array
 
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+# 1-Print out a random color.
 
+# p colors.sample
+# ==> first try "orange"
+# ==> second try "green"
 
+# 2-Print out the colors array in reverse order.
+# p colors.reverse
+# ==>["violet", "indigo", "blue", "green", "yellow", "orange", "red"]
+
+#3-Print out all of the colors in the array with all capital letters.
+# p colors.map(&:upcase)
+# ==> ["RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "INDIGO", "VIOLET"]
 
