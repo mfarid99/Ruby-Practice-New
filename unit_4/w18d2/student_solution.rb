@@ -190,30 +190,51 @@ colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
 # Hashes
 
-# Hashes
 
-book = {
-  title: 'The Great Gatsby',
-  author: 'F Scott Fitzgerald',
-  year: 1925,
-  price: 10
-}
+# book = {
+#   title: 'The Great Gatsby',
+#   author: 'F Scott Fitzgerald',
+#   year: 1925,
+#   price: 10
+# }
 
-lamp = {
-  type: 'reading',
-  brand: 'Ikea',
-  price: 25
-}
+# lamp = {
+#   type: 'reading',
+#   brand: 'Ikea',
+#   price: 25
+# }
 
-table = {
-  type: 'bed side',
-  brand: 'Crate & Barrel',
-  color: 'birch',
-  price: 50
-}
+# table = {
+#   type: 'bed side',
+#   brand: 'Crate & Barrel',
+#   color: 'birch',
+#   price: 50
+# }
 
 
-p book [:price]
+# def print_price n 
+#     puts n[:price]
+
+# end
+
+# print_price book
+# ===>10
+# print_price lamp
+# ===>25
+# print_price table
+# ===>50
+
+# def print_item_sums x, y 
+#     puts x[:price] + y[:price]
+# end
+    # print_item_sums table, lamp
+    # ==> 75
+    # print_item_sums table, book
+    # ==> 60
+    # print_item_sums lamp, book
+    # ==>35
+
+
 
 #1 - Write a method named print_price that will take in any hash and return the price of the item.
 
