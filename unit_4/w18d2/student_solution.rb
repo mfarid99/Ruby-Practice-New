@@ -163,3 +163,19 @@ colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 # p colors.map(&:upcase)
 # ==> ["RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "INDIGO", "VIOLET"]
 
+#Methods
+
+#Write a method named find_area that finds the area of a rectangle when given values for width and height
+
+def find_area 
+puts "Enter height of rectangle"
+height = gets.to_f
+puts "enter width of rectangle"
+width = gets.to_f
+areaOfRectangle = height * width
+puts "area Of Rectangle is: #{areaOfRectangle}"
+
+
+
+
+end
