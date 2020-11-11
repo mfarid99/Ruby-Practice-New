@@ -224,19 +224,44 @@ p book [:price]
 
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-total = 0
+# total = 0
 
-(1...1000).each do |i|
+# (1...1000).each do |i|
 
-    if i % 3 == 0 && i % 5 == 0
-        total += i
-    elsif i % 5 == 0
-        total += i
-    elsif i % 3 == 0
-        total += i
-    end      
-end
+#     if i % 3 == 0 && i % 5 == 0
+#         total += i
+#     elsif i % 5 == 0
+#         total += i
+#     elsif i % 3 == 0
+#         total += i
+#     end      
+# end
 
-puts total
+# puts total
 
-  
+## Write a method called check_prime? that will test whether a number is Prime. The method will return true if Prime, false if not.
+
+# def prime_num(n)
+#     if n <= 1
+#       return false
+#     else 
+#         if (2...n).any? { |i| n % i  == 0}
+#             return false
+#         else
+#             return true
+#         end 
+#         end
+#     end
+# p prime_num (7)
+
+#2-Write another method called get_primes that will print all the Primes up to an arbitrary limit. For example, if you invoke your method with get_primes 100, it will print all the Prime numbers up to and including 100.
+
+# require 'prime'
+
+# def get_primes (a)
+#    a.select{|e| e.prime?}
+# end
+
+# arr1 = (1..100).to_a
+# p get_primes(arr1)
+# ==>[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
