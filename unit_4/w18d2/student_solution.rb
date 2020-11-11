@@ -167,15 +167,21 @@ colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
 #Write a method named find_area that finds the area of a rectangle when given values for width and height
 
-def find_area 
-puts "Enter height of rectangle"
-height = gets.to_f
-puts "enter width of rectangle"
-width = gets.to_f
-areaOfRectangle = height * width
-puts "area Of Rectangle is: #{areaOfRectangle}"
+# def find_area
+#     width = 7
+#     height = 10
+# find_area = width * height
+# end 
+# puts "area Of Rectangle is: #{find_area}"
+# ==> 70
 
 
+# Write a method named multiply_each_by_five that will loop over the given nums array below and print each number multiplied by 5
 
+# def multiply_each_by_five
+# nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0]
+# multiply_each_by_five = nums.map {|x| x*5 }
+# end
 
-end
+# p multiply_each_by_five
+# ==> [25, 25, 30, 35, 10, 20, 15, 10, 5, 45, 35, 30, 0, 0]
